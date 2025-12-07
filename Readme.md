@@ -1,17 +1,36 @@
 # RemapMoveKeys
 ## Description:
 autor: lib.bioq@gmail.com
-version: 1.0.0
-Description: Remapea las teclas direcionales para que su digitación sea más comodo y evitar el movimiento brusco de la mano hacia las teclas direccionales.
+versión: 2.0.0
+Descripción: Re-mapea las teclas direccionales para que su digitación sea más cómodo y evitar el movimiento brusco de la mano hacia las teclas direccionales.
 
 
 
 ## Install
 
 - Download and Install [Autohotkey](https://www.autohotkey.com/)
+
 - Download source from repositories
-- Execute Script **RemapMoveKeys_reverse.ahk** or **RemapMoveKeys_standar.ahk**
+
+- Execute Script **RemapMoveKeysMain.ahk**
+
 - **miscellaneous**: automatize for execute script when windows start
+
+  ## Config: Standar or Reverse
+
+- La configuración **Reverse** ya esta activa por defecto
+
+- Abre el archivo **RemapMoveKeysMain.ahk** con un editor de texto 
+
+- Busca la línea **Configuración**:
+
+  ```bash
+  ;* ----- Configuración -------------------------------------------------
+  #Include, %A_ScriptDir%\RemapMoveKeys_reverse.ahk
+  ;#Include, %A_ScriptDir%\RemapMoveKeys_standar.ahk
+  ; ----------------------------------------------------------------------
+  ```
+- Comenta y descomerte utilizando **coma(;)**:  **RemapMoveKeys_reverse.ahk** o **RemapMoveKeys_standar.ahk**  según su preferencia.
 
 ## Using
 
@@ -22,6 +41,8 @@ Description: Remapea las teclas direcionales para que su digitación sea más co
 De acuerdo a la descripción anterior tomar la combinacion de teclas utilizadas en las imagenes como referencias para ubicar el **short cut**  en su teclado.
 
 ### Remap Move Keys standard
+
+---
 
 #### Move cursor
 
@@ -90,8 +111,9 @@ De acuerdo a la descripción anterior tomar la combinacion de teclas utilizadas 
 | <kbd>Shift</kbd>+<kbd>Enter</kbd> | Puts ";" to End of current line                      |
 | <kbd>Alt</kbd>+<kbd>Enter</kbd>   | Puts ";" to End of current line and goes to new line |
 
-
 ### Remap Move Keys Reverse
+
+---
 
 #### Move cursors
 
