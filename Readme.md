@@ -16,11 +16,11 @@ Descripción: Re-mapea las teclas direccionales para que su digitación sea más
 
 - **miscellaneous**: automatize for execute script when windows start
 
-  ## Config: Standar or Reverse
+## Config: Standar or Reverse
 
 - La configuración **Reverse** ya esta activa por defecto
 
-- Abre el archivo **RemapMoveKeysMain.ahk** con un editor de texto 
+- Abre el archivo **RemapMoveKeysMain.ahk** con un editor de texto
 
 - Busca la línea **Configuración**:
 
@@ -30,7 +30,11 @@ Descripción: Re-mapea las teclas direccionales para que su digitación sea más
   ;#Include, %A_ScriptDir%\RemapMoveKeys_standar.ahk
   ; ----------------------------------------------------------------------
   ```
+
 - Comenta y descomerte utilizando **coma(;)**:  **RemapMoveKeys_reverse.ahk** o **RemapMoveKeys_standar.ahk**  según su preferencia.
+
+## Pause (suspende)
+- Presionando la combinación de teclas <kbd>ctrl</kbd>+<kbd>F11</kbd> puedes pausar y activa **RemapMoveKeys**
 
 ## Using
 

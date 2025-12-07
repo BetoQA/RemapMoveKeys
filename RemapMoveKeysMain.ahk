@@ -6,7 +6,7 @@ SetWorkingDir, %A_ScriptDir%
  * --------------------------------------------------------------------
  * Proyecto: RemapMoveKeys
  * Autor: <lib.bioq@gmail.com>
- * Versión: <v2.0.0>
+ * Versión: <v2.1.0>
  * Fecha: [DD/MM/AAAA]
  *
  * Descripción General:
@@ -100,8 +100,11 @@ SelectNextWord(){
     }
 }
 
-
-
+; Tecla para activar/desactivar (Ctrl+F11 por ejemplo)
+^F11::
+    Suspend
+    SoundBeep, 600, 60
+return
 
 
 /**
